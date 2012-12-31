@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>jQuery ClassySocial plugin | Class.PM</title>
+        <link rel="stylesheet" media="screen" href="css/documentation.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/jquery.classysocial.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/jquery.classysocial.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div class="container_6 clearfix">
+                    <h1 class="grid_6">jQuery ClassySocial</h1>
+                </div>
+            </header>
+            <section>
+                <div class="container_6 clearfix">
+                    <section class="main-section grid_6">
+                        <div class="main-content">
+                            <header>
+                                <h2>Overview</h2>
+                            </header>
+                            <section class="clearfix">
+                                <div>
+                                    <div class="classysocial" style="float: right" data-arc-length="360" data-image-type="facebook" data-picture="picozu" data-facebook-handle="picozu" data-socl-handle="marius-stanciu" data-twitter-handle="picozu_editor" data-email-handle="office@picozu.net" data-pinterest-handle="picozu" data-instagram-handle="picozu" data-networks="socl,facebook,twitter,instagram,pinterest,email"></div>
+                                    <p><a href="http://www.class.pm/projects/jquery/classybox">ClassyBox</a> is a <a href="http://www.jquery.com">jQuery</a> plugin written by <a href="http://www.class.pm">Marius Stanciu - Sergiu</a>, a plugin that lets your site visitors easily see what networks you belong to and visit them in a click of a button.</p>
+                                    <p>Currently supports Facebook, Twitter, Dribbble, Socl, Youtube, Vimeo, Google Plus, Pinterest, LinkedIn, Instagram and e-mail.</p>
+                                    <p>Allow your users to see your presence on 11 of the most popular networks instantly with no need for a knowledge of coding! Have links to your Facebook, Twitter, Vimeo, Dribbble, Instagram, YouTube (and more!) profiles shown in a slick way, sure to impress your users.</p>
+                                    <p>Includes functionality to use your current Facebook image as the button that users press to draw out the network buttons, with automatic updating, pulled straight from Facebook!</p>
+                                    <p>Click on the image to the right of this text for a demo.</p>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+                <div class="container_6 clearfix">
+                    <section class="main-section grid_6">
+                        <div class="main-content">
+                            <header>
+                                <h2>Usage</h2>
+                            </header>
+                            <section class="clearfix">
+                                <div>
+<p>First you need to include the jQuery library, since ClassySocial is a plugin. You can download it from the <a href="http://www.jquery.com">jQuery website</a> or link it directly from the Google CDN.</p>
+<pre>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;
+</pre>
+<p>Secondly, you need to include the jQuery ClassySocial javascript and the CSS file, which you can do it by adding the code below to your page.</p>
+<pre>
+&lt;script src="js/jquery.classysocial.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/jquery.classysocial.css" /&gt;
+</pre>
+<p>Next, you implement the structure on which you want to trigger the plugin.</p>
+<pre>
+&lt;div class="classysocial right" data-arc-length="360" data-image-type="facebook"
+    data-picture="picozu" data-facebook-handle="picozu"
+    data-twitter-handle="picozu_editor" data-email-handle="office@picozu.net"
+    data-networks="facebook,twitter,email"&gt;&lt;/div&gt;
+</pre>
+<p>As the last step, you trigger the plugin on the element you just created. In this case, we trigger it on the element with the class <em>classysocial</em>.</p>
+<pre>
+$(".classysocial").each(function() {
+    new ClassySocial(this);
+});
+</pre>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+                <div class="container_6 clearfix">
+                    <section class="main-section grid_6">
+                        <div class="main-content">
+                            <header>
+                                <h2>Options</h2>
+                            </header>
+                            <section class="clearfix">
+                                <div>
+                                    <p><em><strong>data-networks</strong></em> - comma-separated list of social networks.</p>
+                                    <p><em><strong>data-image-type</strong></em> - can be <em>facebook</em> if you want your Facebook profile image to be shown by default or <em>picture</em>.</p>
+                                    <p><em><strong>data-picture</strong></em> -  can be either the name of the Facebook profile, an image url (ex <em>images/test.jpg</em>) or <em>none</em>.</p>
+                                    <p><em><strong>data-YYY-handle</strong></em> - where YYY can be the name of the social networks listed in the <em>data-networks</em> setting. Create a <em>data-YYY-handle</em> for each of the social networks.</p>
+                                    <p><em><strong>data-orientation</strong></em> - orientation, can be <em>arc</em> or <em>line</em>.</p>
+                                    <p><em><strong>data-gap</strong></em> - the gap (in pixels) between the profile bubbles.</p>
+                                    <p><em><strong>data-arc-start</strong></em> - start of the arc, from 1 to 360.</p>
+                                    <p><em><strong>data-arc-length</strong></em> - length of the arc, from 1 to 360.</p>
+                                    <p><em><strong>data-radius</strong></em> - the radius of the arc.</p>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+                <div class="container_6 clearfix">
+                    <section class="main-section grid_6">
+                        <div class="main-content">
+                            <header>
+                                <h2>Demo</h2>
+                            </header>
+                            <section class="clearfix">
+                                <div class="classysocial" data-orientation="line" data-picture="images/share_core_square.jpg" data-facebook-handle="picozu" data-socl-handle="marius-stanciu" data-twitter-handle="picozu_editor" data-email-handle="office@picozu.net" data-pinterest-handle="picozu" data-instagram-handle="picozu" data-networks="socl,facebook,twitter,instagram,pinterest,email"></div>
+                                <script>
+                                    $(document).ready(function() {
+                                        $(".classysocial").each(function() {
+                                            new ClassySocial(this);
+                                        });
+                                    });
+                                </script>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-30825160-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </body>
+</html>
