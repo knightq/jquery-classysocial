@@ -4,7 +4,7 @@
  *
  * Written by Marius Stanciu - Sergiu <marius@picozu.com>
  * Licensed under the GPL Version 3 license.
- * Version 1.1.0
+ * Version 1.2.0
  *
  */
 
@@ -82,6 +82,9 @@
 }
 .classysocial.bubble .network_button.socl {
     background: url(../images/bubble_socl_share_button.png);
+}
+.classysocial.bubble .network_button.github {
+    background: url(../images/bubble_github_share_button.png);
 }
 .classysocial.bubble .network_button:hover {
     background-position: 0 -46px;

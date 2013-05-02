@@ -4,7 +4,7 @@
  *
  * Written by Marius Stanciu - Sergiu <marius@picozu.com>
  * Licensed under the GPL Version 3 license.
- * Version 1.1.0
+ * Version 1.2.0
  *
  */
 
@@ -202,6 +202,10 @@ ClassySocial = function(e) {
         youtube: {
             profile_url: "http://www.youtube.com/user/[HANDLE]",
             name: "YouTube"
+        },
+        github: {
+            profile_url: "https://www.github.com/[HANDLE]",
+            name: "GitHub"
         }
     };
     initialize();
