@@ -2,8 +2,7 @@
  * jQuery ClassySocial
  * http://www.class.pm/projects/jquery/classysocial
  *
- * Copyright 2012 - 2013, Class.PM www.class.pm
- * Written by Marius Stanciu - Sergiu <marius@picozu.net>
+ * Written by Marius Stanciu - Sergiu <marius@picozu.com>
  * Licensed under the GPL Version 3 license.
  * Version 1.1.0
  *
