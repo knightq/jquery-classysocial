@@ -8,6 +8,6 @@ Includes functionality to use your current Facebook image as the button that use
 
 @name ClassySocial
 @package jQuery plugin
-@author Marius Stanciu - Sergiu <marius@picozu.com>
+@author Marius Stanciu - Sergiu <marius@class.pm>
 @website http://www.class.pm/projects/jquery/classysocial
-@version 1.2.0
+@version 2.2.0
